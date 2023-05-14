@@ -30,8 +30,9 @@ printCentered("fastboot", 10)
  
 -- Вывод надписи "by matveymayner"
 printCentered("by matveymayner", 20)
- 
--- Запуск файлов
+
+wait(4) 
+
 runFile("OS.lua")
 runFile("HIPOSAV.lua")
 runFile("init.lua")
