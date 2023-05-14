@@ -30,7 +30,6 @@ printCentered("fastboot", 10)
  
 -- Вывод надписи "by matveymayner"
 printCentered("by matveymayner", 20)
-
 wait(4) 
 
 runFile("OS.lua")
