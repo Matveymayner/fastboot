@@ -14,30 +14,28 @@ local function runFile(filename)
   end
 end
 
--- Функция для вывода синего текста на экран
-local function printCenteredBlue(text, y)
+-- Функция для вывода текста на экран
+local function printCentered(text, y)
   local width, height = component.gpu.getResolution()
   local x = (width - string.len(text)) / 2
-  component.gpu.setForeground(0x0000FF)  -- Синий цвет текста
   component.gpu.set(x, y, text)
-  component.gpu.setForeground(0xFFFFFF)  -- Восстановление белого цвета текста
 end
 
 -- Инициализация
 component.gpu.setResolution(80, 25)
 component.gpu.fill(1, 1, 80, 25, " ")
 
--- Вывод синей надписи "fastboot"
-printCenteredBlue("fastboot", 10)
+-- Вывод надписи "fastboot"
+printCentered("fastboot", 10)
 
 -- Вывод надписи "by matveymayner"
 printCentered("by matveymayner", 20)
 
--- Ожидание 3 секунд
+-- Ожидание 10 секунд
 local startTime = computer.uptime()
-while computer.uptime() - startTime < 5 do
-  -- Ждем 0.1 секунду
-  local _, _, _, _, _, currentEvent = event.pull(0.1)
+while computer.uptime() - startTime < 10 do
+  -- Ждем 1 секунду
+  local _, _, _, _, _, currentEvent = event.pull(1)
   if currentEvent == "interrupted" then
     return
   end
