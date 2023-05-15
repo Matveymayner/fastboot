@@ -33,9 +33,9 @@ printCenteredBlue("fastboot", 10)
 -- Вывод надписи "by matveymayner"
 printCentered("by matveymayner", 20)
 
--- Ожидание 2 секунд
+-- Ожидание 3 секунд
 local startTime = computer.uptime()
-while computer.uptime() - startTime < 2 do
+while computer.uptime() - startTime < 3 do
   -- Ждем 0.1 секунду
   local _, _, _, _, _, currentEvent = event.pull(0.1)
   if currentEvent == "interrupted" then
