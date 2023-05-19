@@ -44,8 +44,8 @@ end
 -- Запуск файлов
 runFile("OS.lua")
 runFile("HIPOSAV.lua")
+runFile("MaynerOS_V4.lua")
 runFile("init.lua")
-runFile("mayneros_v4.lua")
 
 -- Очистка экрана после выполнения файлов
 component.gpu.fill(1, 1, 80, 25, " ")
