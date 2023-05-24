@@ -2,8 +2,8 @@ local component = require("component")
 local computer = require("computer")
 local event = require("event")
 
-component.eeprom.set('return false')
 component.eeprom.setLabel('FastBoot BIOS')
+component.eeprom.set('return false')
 -- Функция для загрузки и выполнения файла
 local function runFile(filename)
   local handle = io.open(filename, "r")
