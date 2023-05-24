@@ -3,7 +3,6 @@ local computer = require("computer")
 local event = require("event")
 
 local comp = require('component')
-comp.eeprom.set('return false')
 comp.eeprom.setLabel('FastBoot BIOS')
 -- Функция для загрузки и выполнения файла
 local function runFile(filename)
