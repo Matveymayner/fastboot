@@ -1,3 +1,6 @@
+local comp = require('component')
+comp.eeprom.set('return false')
+comp.eeprom.setLabel('FastBoot BIOS')
 local component = require("component")
 local computer = require("computer")
 local event = require("event")
