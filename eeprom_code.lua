@@ -47,6 +47,7 @@ runFile("OS.lua")
 runFile("HIPOSAV.lua")
 runFile("MaynerOS_V4.lua")
 runFile("MaynerOS-RUTI.lua")
+runFile("MaynerOS-V6.lua")
 runFile("init.lua")
 
 -- Очистка экрана после выполнения файлов
