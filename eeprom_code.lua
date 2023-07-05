@@ -30,7 +30,7 @@ component.gpu.fill(1, 1, 80, 25, " ")
 printCentered("fastboot", 10)
 
 -- Вывод надписи "by matveymayner"
-printCentered("by matveymayner", 20)
+printCentered("by matveymayner     Not supported", 20)
 
 -- Ожидание 10 секунд
 local startTime = computer.uptime()
